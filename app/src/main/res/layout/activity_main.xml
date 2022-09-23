@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/androidparty" />
+    <!--//// untuk menampilkan gambar background yang mengunakkan ukuran 0 dp supaya gambar sama
+    dengan ukuran layar dan menggunakan scaletype centercrop agar tidak berubah ukuran saat dibuka di
+    device apapun-->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="265dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="590dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Happy Birthday ,Friend"
+        android:textColor="#C2185B"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31" />
+    <!--text view untuk menampilkan tulisan Happy birthday, Friend dengan ukuran layout diatas
+    dan font sans-serif-black dan warna text #C2185B dengan ukuran Text 24sp-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="155dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="From Surya Hadi kusuma"
+        android:textColor="#880E4F"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+    <!--ext view untuk menampilkan tulisan from Surya Hadi Kusuma dengan ukuran layout diatas
+    dan font sans-serif-condensed dan warna text #880E4F dengan ukuran Text 14sp-->
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="28dp"
+        android:text="Next"
+        android:textColor="#1DE9B6"
+        app:backgroundTint="#673AB7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#F44336"
+        tools:ignore="TextContrastCheck" />
+    <!--Butoon digunakan untuk menampilkan tombol dengan background tombol berwana #673AB7
+     dengan tulisan Next dengan warna #1DE9B6,dengan ukuran layout diatas menggunakan satuan dp-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
